@@ -48,6 +48,8 @@ const config = {
             'https://github.com/scientific-models/citation-dashboard/tree/main/',
           remarkPlugins: [math, [require('mdx-mermaid'), {}]],
           rehypePlugins: [katex],
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         blog: {
           showReadingTime: true,

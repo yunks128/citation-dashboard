@@ -1,4 +1,3 @@
-```css
 /* /src/components/HomepageFeatures/styles.module.css */
 
 .features {
@@ -151,4 +150,3 @@
   background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-color-primary) 100%);
   color: white;
 }
-```
