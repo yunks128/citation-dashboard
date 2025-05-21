@@ -7,6 +7,13 @@ const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import {tailwind} from 'tailwindcss/defaultTheme';
+import {tailwindcss} from 'tailwindcss/defaultTheme';
+
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Scientific Models Citation Dashboard',

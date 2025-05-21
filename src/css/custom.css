@@ -233,3 +233,5 @@
 [data-theme='dark'] .metric-card-breakdown-value {
   color: var(--ifm-color-gray-200);
 }
+
+@import './charts.css';

@@ -20,48 +20,21 @@ ECCO (Estimating the Circulation and Climate of the Ocean) is a state-of-the-art
 
 ## Citation Trends
 
-The following chart shows the annual and cumulative citations for ECCO since its publication:
+The citation trends for ECCO demonstrate consistent growth since its publication in 2010, with peak citation years occurring between 2016-2019.
 
-<mermaid>
-gantt
-    title ECCO Citations by Year
-    dateFormat  YYYY
-    axisFormat %Y
-    section Annual Citations
-    2010 (12) :2010, 12
-    2011 (15) :2011, 15
-    2012 (18) :2012, 18
-    2013 (20) :2013, 20
-    2014 (22) :2014, 22
-    2015 (25) :2015, 25
-    2016 (28) :2016, 28
-    2017 (30) :2017, 30
-    2018 (32) :2018, 32
-    2019 (30) :2019, 30
-    2020 (28) :2020, 28
-    2021 (25) :2021, 25
-    2022 (20) :2022, 20
-    2023 (15) :2023, 15
-    2024 (4) :2024, 4
-    2025 YTD (0) :2025, 0
-</mermaid>
+![ECCO Citation Trends](../../static/img/ecco-citations.png)
+
+*Figure 1: Annual and cumulative citations for ECCO (2010-2025). Created using ggplot2 with a combination of geom_col() for annual citations and geom_line() with secondary y-axis for cumulative citations. A blue color scheme emphasizes the oceanic focus of the model.*
 
 As of May 2025, ECCO has accumulated 324 citations with an average growth rate of 21.6 citations per year. The peak citation year was 2018 with 32 citations.
 
 ## Research Domains
 
-ECCO has been applied across various research domains, with the following distribution:
+ECCO has been applied across various research domains, with significant impacts in physical oceanography, climate science, and sea level studies.
 
-<mermaid>
-pie
-    title Research Domain Distribution
-    "Physical Oceanography" : 147
-    "Climate Science" : 112
-    "Sea Level Studies" : 95
-    "Ocean Heat Content" : 76
-    "Ocean Circulation" : 68
-    "Interdisciplinary Applications" : 42
-</mermaid>
+![ECCO Research Domains](../../static/img/ecco-domains.png)
+
+*Figure 2: Distribution of ECCO citations by research domain. Created using ggplot2 with geom_treemap() to visualize the hierarchical relationship between domains, with area proportional to citation count and color intensity representing impact factor.*
 
 The primary application of ECCO is in Physical Oceanography, accounting for 45% of all citations. Climate Science (35%) and Sea Level Studies (29%) are also significant application domains.
 
@@ -69,25 +42,24 @@ The primary application of ECCO is in Physical Oceanography, accounting for 45% 
 
 Citations are categorized into four engagement levels based on how deeply ECCO is being utilized:
 
-<mermaid>
-bar
-    title Engagement Level Distribution
-    "Level 1: Simple Citation" : 178
-    "Level 2: Data Usage" : 76
-    "Level 3: Model Adaptation" : 48
-    "Level 4: Foundation" : 22
-</mermaid>
+![ECCO Engagement Levels](../../static/img/ecco-engagement.png)
 
-- **Level 1: Simple Citation** - References the paper without using the model (178 papers)
-- **Level 2: Data Usage** - Uses ECCO data products or methodology (76 papers)
-- **Level 3: Model Adaptation** - Modifies or extends the ECCO model (48 papers)
-- **Level 4: Foundation** - ECCO is foundational to the research (22 papers)
+*Figure 3: Distribution of engagement levels for ECCO citations. Created using ggplot2 with geom_bar() and facet_wrap() to compare engagement levels across different time periods, with a sequential blue color palette representing depth of engagement.*
+
+- **Level 1: Simple Citation** - References the paper without using the model (178 papers, 54.8%)
+- **Level 2: Data Usage** - Uses ECCO data products or methodology (76 papers, 23.5%)
+- **Level 3: Model Adaptation** - Modifies or extends the ECCO model (48 papers, 14.8%)
+- **Level 4: Foundation** - ECCO is foundational to the research (22 papers, 6.9%)
 
 The implementation rate (percentage of Level 2-4 citations) is 45.2%, one of the highest among comparable ocean models, indicating strong practical application.
 
 ## Geographic Impact
 
 ECCO provides global ocean coverage but has been specifically applied to study key oceanographic regions.
+
+![ECCO Geographic Impact](../../static/img/ecco-geographic.png)
+
+*Figure 4: Geographic distribution of ECCO implementations. Created using ggplot2 with geom_sf() and coord_sf() with a bathymetric color scale to visualize ocean depth and citation density across oceanic regions.*
 
 ### Top Regions
 
@@ -112,18 +84,11 @@ The application scope of ECCO has expanded significantly since its publication:
 
 ## Model Comparison
 
-The following chart compares ECCO with other ocean circulation models:
+The following visualization compares ECCO with other ocean circulation models:
 
-<mermaid>
-xychart-beta
-    title "Ocean Models Comparison"
-    x-axis "Citations"
-    y-axis "Impact Score" 0 --> 30
-    line [17.9, 19.4, 16.8, 21.2, 15.7]
-    bar [324, 462, 285, 518, 243]
-    title "Models" 
-    legend "ECCO" "SODA" "HYCOM" "MITgcm" "ROMS"
-</mermaid>
+![Ocean Models Comparison](../../static/img/ecco-comparison.png)
+
+*Figure 5: Comparison of citation metrics across ocean circulation models. Created using ggplot2 with geom_col() for citation counts and geom_point() with secondary y-axis for impact scores, using a diverging color palette to highlight ECCO's position among competitors.*
 
 ECCO has established itself as a leading ocean state estimation system, with impact scores comparable to older, well-established models like SODA and MITgcm.
 
@@ -152,6 +117,10 @@ ECCO's Impact Score of 17.9 is calculated based on:
 ## Future Trends
 
 Based on citation patterns and emerging research areas, the following trends are projected for ECCO:
+
+![ECCO Future Projections](../../static/img/ecco-projections.png)
+
+*Figure 6: Projected citation growth for ECCO (2025-2030). Created using ggplot2 with geom_smooth(method="gam") for forecasting with confidence intervals and geom_point() to show historical data points.*
 
 ### Citation Projection (2025-2030)
 - Projected growth to ~450 citations by 2030 (optimistic scenario: 500 citations)
