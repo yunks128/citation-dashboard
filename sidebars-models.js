@@ -7,7 +7,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebarsModels = {
     modelsSidebar: [
-      {
+      /**{
         type: 'doc',
         id: 'rapid',
         label: 'RAPID'
@@ -31,7 +31,7 @@ const sidebarsModels = {
         type: 'doc',
         id: 'momo-chem',
         label: 'MOMO-CHEM'
-      },
+      },*/
     ],
   };
   

@@ -7,8 +7,6 @@ const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -16,8 +14,8 @@ const config = {
   tagline: 'Track the impact and reach of scientific models through citation metrics',
   favicon: 'img/favicon.ico',
 
-  url: 'https://scientific-models-dashboard.org',
-  baseUrl: '/',
+  url: 'https://yunks128.github.io',
+  baseUrl: '/citation-dashboard/',
 
   organizationName: 'scientific-models',
   projectName: 'citation-dashboard',
@@ -37,13 +35,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/scientific-models/citation-dashboard/tree/main/',
-          remarkPlugins: [remarkMath, require('mdx-mermaid')],
-          rehypePlugins: [rehypeKatex],
+          editUrl: 'https://github.com/yunks128/citation-dashboard/tree/main/',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/scientific-models/citation-dashboard/tree/main/',
+          editUrl: 'https://github.com/yunks128/citation-dashboard/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -99,24 +97,6 @@ const config = {
         },
       };
     },
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'models',
-        path: 'docs/models',
-        routeBasePath: 'models',
-        sidebarPath: require.resolve('./sidebars-models.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'metrics',
-        path: 'docs/metrics',
-        routeBasePath: 'metrics',
-        sidebarPath: require.resolve('./sidebars-metrics.js'),
-      },
-    ],
   ],
 
   themeConfig:
@@ -141,7 +121,7 @@ const config = {
           { to: '/citations', label: 'Citation Analysis', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/scientific-models/citation-dashboard',
+            href: 'https://github.com/yunks128/citation-dashboard',
             label: 'GitHub',
             position: 'right',
           },
@@ -174,7 +154,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/scientific-models/citation-dashboard',
+                href: 'https://github.com/yunks128/citation-dashboard',
               },
               {
                 label: 'Twitter',

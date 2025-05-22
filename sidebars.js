@@ -25,10 +25,10 @@ const sidebars = {
       label: 'Models',
       items: [
         'models/rapid',
-        'models/cms-flux',
-        'models/ecco',
-        'models/issm',
-        'models/momo-chem',
+        //'models/cms-flux',
+        //'models/ecco',
+        //'models/issm',
+        //'models/momo-chem',
       ],
     },
     {
@@ -36,8 +36,8 @@ const sidebars = {
       label: 'Metrics',
       items: [
         'metrics/citation-metrics',
-        'metrics/impact-metrics',
-        'metrics/engagement-metrics',
+        //'metrics/impact-metrics2',
+        //'metrics/engagement-metrics',
       ],
     },
     {
