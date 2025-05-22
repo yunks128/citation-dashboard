@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
+const { themes } = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
@@ -9,10 +9,6 @@ const katex = require('rehype-katex');
 
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import {tailwind} from 'tailwindcss/defaultTheme';
-import {tailwindcss} from 'tailwindcss/defaultTheme';
-
-
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -20,23 +16,15 @@ const config = {
   tagline: 'Track the impact and reach of scientific models through citation metrics',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://scientific-models-dashboard.org',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'scientific-models', // Usually your GitHub org/user name.
-  projectName: 'citation-dashboard', // Usually your repo name.
+  organizationName: 'scientific-models',
+  projectName: 'citation-dashboard',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -49,21 +37,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/scientific-models/citation-dashboard/tree/main/',
-          remarkPlugins: [math, [require('mdx-mermaid'), {}]],
-          rehypePlugins: [katex],
-          remarkPlugins: [require('remark-math')],
-          rehypePlugins: [require('rehype-katex')],
+          editUrl: 'https://github.com/scientific-models/citation-dashboard/tree/main/',
+          remarkPlugins: [remarkMath, require('mdx-mermaid')],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/scientific-models/citation-dashboard/tree/main/',
+          editUrl: 'https://github.com/scientific-models/citation-dashboard/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -82,25 +62,30 @@ const config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
-        language: ["en"],
+        language: ['en'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
       },
     ],
   ],
 
+  markdown: {
+    mermaid: true,
+  },
+
   plugins: [
     [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
+        max: 1030,
+        min: 640,
+        steps: 2,
         disableInDev: false,
       },
     ],
@@ -108,7 +93,6 @@ const config = {
       return {
         name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
           postcssOptions.plugins.push(require('tailwindcss'));
           postcssOptions.plugins.push(require('autoprefixer'));
           return postcssOptions;
@@ -138,7 +122,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/social-card.jpg',
       navbar: {
         title: 'Scientific Models Dashboard',
@@ -153,10 +136,10 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/dashboard', label: 'Dashboard', position: 'left'},
-          {to: '/models', label: 'Models', position: 'left'},
-          {to: '/citations', label: 'Citation Analysis', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/dashboard', label: 'Dashboard', position: 'left' },
+          { to: '/models', label: 'Models', position: 'left' },
+          { to: '/citations', label: 'Citation Analysis', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/scientific-models/citation-dashboard',
             label: 'GitHub',
@@ -170,47 +153,20 @@ const config = {
           {
             title: 'Documentation',
             items: [
-              {
-                label: 'Getting Started',
-                to: '/docs/intro',
-              },
-              {
-                label: 'Models',
-                to: '/models',
-              },
-              {
-                label: 'Metrics',
-                to: '/metrics',
-              },
-              {
-                label: 'Methodology',
-                to: '/docs/methodology/data-collection',
-              },
+              { label: 'Getting Started', to: '/docs/intro' },
+              { label: 'Models', to: '/models' },
+              { label: 'Metrics', to: '/metrics' },
+              { label: 'Methodology', to: '/docs/methodology/data-collection' },
             ],
           },
           {
             title: 'Models',
             items: [
-              {
-                label: 'RAPID',
-                to: '/models/rapid',
-              },
-              {
-                label: 'CMS-Flux',
-                to: '/models/cms-flux',
-              },
-              {
-                label: 'ECCO',
-                to: '/models/ecco',
-              },
-              {
-                label: 'ISSM',
-                to: '/models/issm',
-              },
-              {
-                label: 'MOMO-CHEM',
-                to: '/models/momo-chem',
-              },
+              { label: 'RAPID', to: '/models/rapid' },
+              { label: 'CMS-Flux', to: '/models/cms-flux' },
+              { label: 'ECCO', to: '/models/ecco' },
+              { label: 'ISSM', to: '/models/issm' },
+              { label: 'MOMO-CHEM', to: '/models/momo-chem' },
             ],
           },
           {
@@ -229,14 +185,8 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Contact Us',
-                to: '/contact',
-              },
+              { label: 'Blog', to: '/blog' },
+              { label: 'Contact Us', to: '/contact' },
             ],
           },
         ],
@@ -256,7 +206,7 @@ const config = {
         maxHeadingLevel: 4,
       },
       mermaid: {
-        theme: {light: 'neutral', dark: 'forest'},
+        theme: { light: 'neutral', dark: 'forest' },
       },
     }),
 };

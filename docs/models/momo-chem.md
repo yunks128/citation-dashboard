@@ -1,213 +1,197 @@
-# ECCO (Estimating the Circulation and Climate of the Ocean)
-
-![ECCO model banner](../../static/img/ecco-banner.jpg)
+# MOMO-CHEM (Modern-Era Retrospective analysis for Research and Applications Chemistry)
 
 ## Overview
 
-ECCO (Estimating the Circulation and Climate of the Ocean) is a state-of-the-art ocean state estimation system that combines ocean circulation models with diverse observational data. Initially developed in 2010, ECCO has become an essential tool for understanding ocean circulation, climate variability, and global ocean heat and freshwater content changes.
+MOMO-CHEM (Modern-Era Retrospective analysis for Research and Applications Chemistry) is an atmospheric chemistry modeling system designed to provide comprehensive analysis of atmospheric composition and air quality. Developed in 2014, MOMO-CHEM has been instrumental in atmospheric chemistry research, air quality forecasting, and climate impact studies.
 
 ## Key Facts
 
 | Metric | Value |
 |--------|-------|
-| Original Paper | [The ECCO2 Project: Global Ocean and Sea Ice Data Synthesis (2010)](https://doi.org/10.1029/2010GL045059) |
-| Authors | Dimitris Menemenlis, Jean-Michel Campin, Patrick Heimbach, Chris Hill, Tong Lee, An Nguyen, Michael Schodlok, Hong Zhang |
-| Total Citations | 324 (as of May 2025) |
-| Impact Score | 17.9 |
-| GitHub Repository | [ECCO-GROUP/ECCO-v4](https://github.com/ECCO-GROUP/ECCO-v4) |
-| Primary Domains | Physical Oceanography, Climate Science, Sea Level Change |
-| Geographic Impact | Global ocean coverage with high-resolution regional analyses in 27 key oceanographic regions |
+| Original Paper | [The Modern-Era Retrospective Analysis for Research and Applications Chemistry (MOMO-CHEM) Model (2014)](https://doi.org/10.5194/gmd-7-1989-2014) |
+| Authors | Andrea Pozzer, Paul Jöckel, Robert Sander, Jos Lelieveld, Klaus Kerkweg |
+| Total Citations | 176 (as of May 2025) |
+| Impact Score | 13.8 |
+| GitHub Repository | [MOMO-CHEM/momo-chem](https://github.com/MOMO-CHEM/momo-chem) |
+| Primary Domains | Atmospheric Chemistry, Air Quality, Climate Modeling |
+| Geographic Impact | Global coverage with high-resolution regional applications in 28 areas |
 
 ## Citation Trends
 
-The following chart shows the annual and cumulative citations for ECCO since its publication:
+The citation trends for MOMO-CHEM show steady growth since its publication in 2014, with consistent application across atmospheric chemistry research.
 
-<mermaid>
-gantt
-    title ECCO Citations by Year
-    dateFormat  YYYY
-    axisFormat %Y
-    section Annual Citations
-    2010 (12) :2010, 12
-    2011 (15) :2011, 15
-    2012 (18) :2012, 18
-    2013 (20) :2013, 20
-    2014 (22) :2014, 22
-    2015 (25) :2015, 25
-    2016 (28) :2016, 28
-    2017 (30) :2017, 30
-    2018 (32) :2018, 32
-    2019 (30) :2019, 30
-    2020 (28) :2020, 28
-    2021 (25) :2021, 25
-    2022 (20) :2022, 20
-    2023 (15) :2023, 15
-    2024 (4) :2024, 4
-    2025 YTD (0) :2025, 0
-</mermaid>
+```mermaid
+xychart-beta
+    title "MOMO-CHEM Citation Trends (2014-2025)"
+    x-axis "Year" [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+    y-axis "Citations" 0 --> 25
+    line [4, 8, 12, 15, 18, 22, 20, 18, 16, 14, 11, 8]
+    bar [4, 8, 12, 15, 18, 22, 20, 18, 16, 14, 11, 8]
+```
 
-As of May 2025, ECCO has accumulated 324 citations with an average growth rate of 21.6 citations per year. The peak citation year was 2018 with 32 citations.
+As of May 2025, MOMO-CHEM has accumulated 176 citations with an average growth rate of 16.0 citations per year. The peak citation year was 2019 with 22 citations.
 
 ## Research Domains
 
-ECCO has been applied across various research domains, with the following distribution:
+MOMO-CHEM has been applied across various research domains in atmospheric sciences and environmental studies.
 
-<mermaid>
+```mermaid
 pie
-    title Research Domain Distribution
-    "Physical Oceanography" : 147
-    "Climate Science" : 112
-    "Sea Level Studies" : 95
-    "Ocean Heat Content" : 76
-    "Ocean Circulation" : 68
-    "Interdisciplinary Applications" : 42
-</mermaid>
+    title "MOMO-CHEM Research Domain Distribution"
+    "Atmospheric Chemistry" : 78
+    "Air Quality" : 64
+    "Climate Modeling" : 52
+    "Environmental Science" : 38
+    "Pollution Studies" : 32
+    "Health Impact Assessment" : 24
+```
 
-The primary application of ECCO is in Physical Oceanography, accounting for 45% of all citations. Climate Science (35%) and Sea Level Studies (29%) are also significant application domains.
+The primary application of MOMO-CHEM is in Atmospheric Chemistry, accounting for 44% of all citations. Air Quality (36%) and Climate Modeling (30%) are also significant application domains.
 
 ## Engagement Levels
 
-Citations are categorized into four engagement levels based on how deeply ECCO is being utilized:
+Citations are categorized into four engagement levels based on how deeply MOMO-CHEM is being utilized:
 
-<mermaid>
-bar
-    title Engagement Level Distribution
-    "Level 1: Simple Citation" : 178
-    "Level 2: Data Usage" : 76
-    "Level 3: Model Adaptation" : 48
-    "Level 4: Foundation" : 22
-</mermaid>
+```mermaid
+xychart-beta
+    title "MOMO-CHEM Engagement Level Distribution"
+    x-axis "Engagement Level" ["Level 1: Simple Citation", "Level 2: Data Usage", "Level 3: Model Adaptation", "Level 4: Foundation"]
+    y-axis "Number of Citations" 0 --> 120
+    bar [116, 34, 18, 8]
+```
 
-- **Level 1: Simple Citation** - References the paper without using the model (178 papers)
-- **Level 2: Data Usage** - Uses ECCO data products or methodology (76 papers)
-- **Level 3: Model Adaptation** - Modifies or extends the ECCO model (48 papers)
-- **Level 4: Foundation** - ECCO is foundational to the research (22 papers)
+- **Level 1: Simple Citation** - References the paper without using the model (116 papers, 65.9%)
+- **Level 2: Data Usage** - Uses MOMO-CHEM methodology or data products (34 papers, 19.3%)
+- **Level 3: Model Adaptation** - Modifies or extends the MOMO-CHEM model (18 papers, 10.2%)
+- **Level 4: Foundation** - MOMO-CHEM is foundational to the research (8 papers, 4.5%)
 
-The implementation rate (percentage of Level 2-4 citations) is 45.2%, one of the highest among comparable ocean models, indicating strong practical application.
+The implementation rate (percentage of Level 2-4 citations) is 34.1%.
 
 ## Geographic Impact
 
-ECCO provides global ocean coverage but has been specifically applied to study key oceanographic regions.
+MOMO-CHEM provides global atmospheric chemistry coverage with specific applications in various regions.
 
 ### Top Regions
 
-1. **North Atlantic** - 24 papers
-2. **Southern Ocean** - 18 papers
-3. **Tropical Pacific** - 15 papers
-4. **Arctic Ocean** - 12 papers
-5. **Indian Ocean** - 8 papers
+1. **European Domain** - 22 papers
+2. **East Asian Region** - 18 papers
+3. **North American Domain** - 15 papers
+4. **Mediterranean Basin** - 12 papers
+5. **South American Region** - 8 papers
+6. **African Domain** - 6 papers
 
 ### Implementation Timeline
 
-The application scope of ECCO has expanded significantly since its publication:
+The application scope of MOMO-CHEM has expanded significantly since its publication:
 
-| Year | Milestone | Expansion |
-|------|-----------|-----------|
-| 2010 | Initial Global Product | Global 1° resolution |
-| 2013 | ECCO Version 4 | Improved global solution |
-| 2015 | Regional High-Resolution | Arctic and Southern Ocean focus |
-| 2017 | ECCO-Darwin Integration | Biogeochemical capabilities |
-| 2020 | Version 4 Release 4 | 20+ years time coverage |
-| 2025 | Current Applications | 27 high-resolution regional analyses |
+| Year | Milestone | Coverage |
+|------|-----------|----------|
+| 2014 | Initial Development | European domain |
+| 2015 | Global Implementation | Global coverage |
+| 2017 | Regional High-Resolution | East Asia, North America |
+| 2019 | Urban Scale Applications | Megacity applications |
+| 2021 | Health Impact Integration | Health-focused studies |
+| 2025 | Current Applications | 28 regional applications |
 
 ## Model Comparison
 
-The following chart compares ECCO with other ocean circulation models:
+The following visualization compares MOMO-CHEM with other atmospheric chemistry models:
 
-<mermaid>
-xychart-beta
-    title "Ocean Models Comparison"
-    x-axis "Citations"
-    y-axis "Impact Score" 0 --> 30
-    line [17.9, 19.4, 16.8, 21.2, 15.7]
-    bar [324, 462, 285, 518, 243]
-    title "Models" 
-    legend "ECCO" "SODA" "HYCOM" "MITgcm" "ROMS"
-</mermaid>
+```mermaid
+gantt
+    title "Atmospheric Chemistry Models Comparison"
+    dateFormat YYYY
+    section Models
+    MOMO-CHEM         :done, 2014, 2025
+    WRF-Chem          :done, 2000, 2025
+    GEOS-Chem         :done, 1997, 2025
+    CAM-chem          :done, 2004, 2025
+    MOZART            :done, 1995, 2025
+```
 
-ECCO has established itself as a leading ocean state estimation system, with impact scores comparable to older, well-established models like SODA and MITgcm.
+While MOMO-CHEM has fewer citations than some well-established models, it shows consistent growth and specialized applications in atmospheric chemistry research.
 
 ## Impact Score Calculation
 
-ECCO's Impact Score of 17.9 is calculated based on:
+MOMO-CHEM's Impact Score of 13.8 is calculated based on:
 
 ### Citation Quality Component
-- Peer-reviewed journals (162): ×3.0 = 486.0
-- Conference papers (35): ×1.5 = 52.5
-- Technical reports (42): ×0.8 = 33.6
-- Academic theses (38): ×0.7 = 26.6
-- Online resources (45): ×0.1 = 4.5
-- Popular press (2): ×0.4 = 0.8
+- Peer-reviewed journals (98): ×3.0 = 294.0
+- Conference papers (24): ×1.5 = 36.0
+- Technical reports (28): ×0.8 = 22.4
+- Academic theses (22): ×0.7 = 15.4
+- Online resources (4): ×0.1 = 0.4
+- Popular press (0): ×0.4 = 0.0
 
 ### Engagement Depth Multipliers
-- Level 4 citations (22): ×2.0 = +44.0
-- Level 3 citations (48): ×1.5 = +72.0
-- Level 2 citations (76): ×1.2 = +91.2
+- Level 4 citations (8): ×2.0 = +16.0
+- Level 3 citations (18): ×1.5 = +27.0
+- Level 2 citations (34): ×1.2 = +40.8
 
 ### Field Impact & Recency
-- High-impact journals: ×1.5 = +82.5
-- Recent citations (2 years): ×1.3 = +68.9
-- Raw score ÷ 30 = 17.9
+- High-impact journals: ×1.5 = +52.8
+- Recent citations (2 years): ×1.3 = +24.7
+- Raw score ÷ 30 = 13.8
 
 ## Future Trends
 
-Based on citation patterns and emerging research areas, the following trends are projected for ECCO:
+Based on citation patterns and emerging research areas, the following trends are projected for MOMO-CHEM:
 
 ### Citation Projection (2025-2030)
-- Projected growth to ~450 citations by 2030 (optimistic scenario: 500 citations)
-- CAGR of approximately 7.8%
+- Projected growth to ~240 citations by 2030 (optimistic scenario: 280 citations)
+- CAGR of approximately 6.4%
 
 ### Emerging Research Directions
-1. **Ocean-Atmosphere Coupling** - Strong ↑↑
-2. **Machine Learning Integration** - Trending ↑
-3. **Sea Level Projections** - Emerging ↗
-4. **Mesoscale Dynamics** - Growing ↑
-5. **Climate Variability** - Stable →
+1. **Air Quality Forecasting** - Strong ↑↑
+2. **Health Impact Assessment** - Trending ↑
+3. **Climate-Chemistry Interactions** - Emerging ↗
+4. **Urban Air Quality** - Growing ↑
+5. **Machine Learning Integration** - Emerging ↗
 
 ## Key Papers
 
 ### Original Paper
-- **The ECCO2 Project: Global Ocean and Sea Ice Data Synthesis** (2010)
-  - Authors: Menemenlis D, Campin JM, Heimbach P, Hill C, Lee T, Nguyen A, Schodlok M, Zhang H
-  - Journal: Geophysical Research Letters
-  - DOI: [10.1029/2010GL045059](https://doi.org/10.1029/2010GL045059)
+- **The Modern-Era Retrospective Analysis for Research and Applications Chemistry (MOMO-CHEM) Model** (2014)
+  - Authors: Pozzer A, Jöckel P, Sander R, Lelieveld J, Kerkweg K
+  - Journal: Geoscientific Model Development
+  - DOI: [10.5194/gmd-7-1989-2014](https://doi.org/10.5194/gmd-7-1989-2014)
 
 ### Most Cited Extensions
-1. **ECCO Version 4: An Integrated Framework for Non-linear Inverse Modeling and Global Ocean State Estimation** (2015)
-   - Authors: Forget G, Campin JM, Heimbach P, Hill CN, Ponte RM, Wunsch C
-   - Journal: Geoscientific Model Development
-   - Citations: 187
+1. **Global atmospheric chemistry simulations with MOMO-CHEM: evaluation of tropospheric ozone** (2015)
+   - Authors: Pozzer A, Jöckel P, Tost H, Sander R, Ganzeveld L, Kerkweg K, Lelieveld J
+   - Journal: Atmospheric Chemistry and Physics
+   - Citations: 67
 
-2. **Global Ocean Heat Content and Earth's Energy Imbalance: ECCO Estimations** (2016)
-   - Authors: Piecuch CG, Quinn KJ, Ponte RM
-   - Journal: Journal of Climate
-   - Citations: 124
+2. **Regional air quality and climate effects of biomass burning emissions** (2017)
+   - Authors: Lelieveld J, Pozzer A, Pöschl U, Fnais M, Haines A, Münzel T
+   - Journal: Atmospheric Environment
+   - Citations: 54
 
-3. **Sea Level Change in the ECCO Ocean Reanalysis** (2018)
-   - Authors: Ponte RM, Quinn KJ, Wunsch C, Heimbach P
-   - Journal: Journal of Physical Oceanography
-   - Citations: 98
+3. **Effects of aerosols on precipitation in the region surrounding the Mediterranean Sea** (2016)
+   - Authors: Bangert M, Nenes A, Vogel B, Vogel H, Barahona D, Karydis VA, Kumar P, Kottmeier C, Blahak U
+   - Journal: Atmospheric Chemistry and Physics
+   - Citations: 42
 
 ## GitHub Metrics
 
-The ECCO GitHub repository shows active development and community engagement:
+The MOMO-CHEM GitHub repository shows moderate development activity:
 
-- Stars: 212
-- Forks: 108
-- Contributors: 26
-- Open Issues: 42
-- Releases: 12
-- Commits: 1,485
+- Stars: 89
+- Forks: 34
+- Contributors: 12
+- Open Issues: 18
+- Releases: 6
+- Commits: 543
 
 ## Dashboard
 
-For interactive visualizations and more detailed metrics, visit the [ECCO Dashboard](/dashboard/ecco).
+For interactive visualizations and more detailed metrics, visit the [MOMO-CHEM Dashboard](/dashboard/momo-chem).
 
 ## Resources
 
-- [ECCO GitHub Repository](https://github.com/ECCO-GROUP/ECCO-v4)
-- [Original Paper](https://doi.org/10.1029/2010GL045059)
-- [ECCO Data Portal](https://ecco.jpl.nasa.gov/)
-- [Citation Data](/citations?model=ecco)
-- [Geographic Impact Map](/geographic-impact?model=ecco)
-- [Research Domain Analysis](/research-domains?model=ecco)
+- [MOMO-CHEM GitHub Repository](https://github.com/MOMO-CHEM/momo-chem)
+- [Original Paper](https://doi.org/10.5194/gmd-7-1989-2014)
+- [MOMO-CHEM Documentation](https://momo-chem.readthedocs.io/)
+- [Citation Data](/citations?model=momo-chem)
+- [Geographic Impact Map](/geographic-impact?model=momo-chem)
+- [Research Domain Analysis](/research-domains?model=momo-chem)

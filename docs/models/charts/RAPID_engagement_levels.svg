@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    RAPID Engagement Level Distribution
+  </text>
+  
+  <!-- Axes -->
+  <line x1="80" y1="50" x2="80" y2="320" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="320" x2="750" y2="320" stroke="#333" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="70" y="325" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">0</text>
+  <text x="70" y="270" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">50</text>
+  <text x="70" y="220" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">100</text>
+  <text x="70" y="170" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">150</text>
+  <text x="70" y="120" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">200</text>
+  
+  <!-- Y-axis title -->
+  <text x="25" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333" transform="rotate(-90, 25, 185)">
+    Number of Citations
+  </text>
+  
+  <!-- Bars -->
+  <rect x="120" y="50" width="120" height="270" fill="#e74c3c"/>
+  <rect x="260" y="220" width="120" height="100" fill="#f39c12"/>
+  <rect x="400" y="250" width="120" height="70" fill="#27ae60"/>
+  <rect x="540" y="290" width="120" height="30" fill="#8e44ad"/>
+  
+  <!-- Bar value labels -->
+  <text x="180" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">175</text>
+  <text x="320" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">50</text>
+  <text x="460" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">28</text>
+  <text x="600" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">12</text>
+  
+  <!-- X-axis labels -->
+  <text x="180" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Level 1</text>
+  <text x="180" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Simple Citation</text>
+  
+  <text x="320" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Level 2</text>
+  <text x="320" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Data Usage</text>
+  
+  <text x="460" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Level 3</text>
+  <text x="460" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Model Adaptation</text>
+  
+  <text x="600" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Level 4</text>
+  <text x="600" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Foundation</text>
+  
+  <!-- X-axis title -->
+  <text x="415" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    Engagement Level
+  </text>
+  
+  <!-- Grid lines -->
+  <line x1="80" y1="270" x2="750" y2="270" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="80" y1="220" x2="750" y2="220" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="80" y1="170" x2="750" y2="170" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="80" y1="120" x2="750" y2="120" stroke="#e0e0e0" stroke-width="1"/>
+</svg>

@@ -1,7 +1,5 @@
 # CMS-Flux (Carbon Monitoring System Flux)
 
-![CMS-Flux model banner](../../static/img/cms-flux-banner.jpg)
-
 ## Overview
 
 CMS-Flux (Carbon Monitoring System Flux) is a carbon cycle modeling system designed to quantify and monitor carbon fluxes between the atmosphere, land, and ocean. Developed in 2015, it has been instrumental in tracking carbon sources and sinks, supporting climate change research, and informing environmental policy decisions.
@@ -22,9 +20,14 @@ CMS-Flux (Carbon Monitoring System Flux) is a carbon cycle modeling system desig
 
 The citation trends for CMS-Flux show strong growth since its publication in 2015, reaching a peak in 2019 and maintaining substantial citation rates in subsequent years.
 
-![CMS-Flux Citation Trends](../../static/img/cms-flux-citations.png)
-
-*Figure 1: Annual and cumulative citations for CMS-Flux (2015-2025). The stacked bar chart shows annual citations with a line overlay for cumulative citations. Created using ggplot2 with geom_bar() and geom_line() with a secondary y-axis.*
+```mermaid
+xychart-beta
+    title "CMS-Flux Citation Trends (2015-2025)"
+    x-axis "Year" [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+    y-axis "Citations" 0 --> 30
+    line [18, 20, 22, 25, 28, 26, 24, 22, 19, 8, 0]
+    bar [18, 20, 22, 25, 28, 26, 24, 22, 19, 8, 0]
+```
 
 As of May 2025, CMS-Flux has accumulated 212 citations with an average growth rate of 21.2 citations per year. The peak citation year was 2019 with 28 citations.
 
@@ -32,9 +35,15 @@ As of May 2025, CMS-Flux has accumulated 212 citations with an average growth ra
 
 CMS-Flux has been applied across various research domains, with significant contributions to carbon cycle science, climate modeling, and atmospheric science.
 
-![CMS-Flux Research Domains](../../static/img/cms-flux-domains.png)
-
-*Figure 2: Distribution of CMS-Flux citations by research domain. Created using ggplot2 with geom_bar(position="fill") and a custom green color palette to represent the proportional contribution of each domain.*
+```mermaid
+pie
+    title "CMS-Flux Research Domain Distribution"
+    "Carbon Cycle Science" : 94
+    "Climate Modeling" : 76
+    "Atmospheric Science" : 65
+    "Emission Monitoring" : 58
+    "Environmental Policy" : 36
+```
 
 The primary application of CMS-Flux is in Carbon Cycle Science, accounting for 44% of all citations. Climate Modeling (36%) and Atmospheric Science (31%) are also significant application domains.
 
@@ -42,9 +51,13 @@ The primary application of CMS-Flux is in Carbon Cycle Science, accounting for 4
 
 Citations are categorized into four engagement levels based on how deeply CMS-Flux is being utilized:
 
-![CMS-Flux Engagement Levels](../../static/img/cms-flux-engagement.png)
-
-*Figure 3: Distribution of engagement levels for CMS-Flux citations. Created using ggplot2 with geom_col() and a sequential green color palette to distinguish between engagement levels.*
+```mermaid
+xychart-beta
+   title "CMS-Flux Engagement Level Distribution"
+   x-axis "Engagement Level" ["Level 1: Simple Citation", "Level 2: Data Usage", "Level 3: Model Adaptation", "Level 4: Foundation"]
+   y-axis "Number of Citations" 0 --> 150
+   bar [130, 42, 28, 12]
+```
 
 - **Level 1: Simple Citation** - References the paper without using the model (130 papers, 61.3%)
 - **Level 2: Data Usage** - Uses CMS-Flux methodology or data (42 papers, 19.8%)
@@ -56,10 +69,6 @@ The implementation rate (percentage of Level 2-4 citations) is 38.7%.
 ## Geographic Impact
 
 CMS-Flux has been implemented for carbon flux monitoring across all continents, with particular focus on regions with high carbon flux variability.
-
-![CMS-Flux Geographic Impact](../../static/img/cms-flux-geographic.png)
-
-*Figure 4: Geographic distribution of CMS-Flux implementations. Created using ggplot2 with geom_sf() and a continuous color scale showing citation density by region.*
 
 ### Top Regions
 
@@ -86,9 +95,13 @@ The geographic scope of CMS-Flux applications has expanded significantly since i
 
 The following visualization compares CMS-Flux with other carbon cycle models:
 
-![Carbon Cycle Models Comparison](../../static/img/cms-flux-comparison.png)
-
-*Figure 5: Comparison of citation metrics and impact scores across carbon cycle models. Created using ggplot2 with a grouped bar chart for citations and impact scores with custom colors to highlight CMS-Flux against other models.*
+```mermaid
+xychart-beta
+    title "Carbon Cycle Models Comparison"
+    x-axis "Model" ["CMS-Flux", "CASA", "TEM", "LPJ", "ISAM"]
+    y-axis "Citations" 0 --> 350
+    bar [212, 328, 175, 287, 143]
+```
 
 While CMS-Flux has fewer citations than well-established models like CASA (Carnegie-Ames-Stanford Approach), it shows strong growth and impact for its relatively short existence, with an average of 21.2 citations per year compared to the group average of 19.7 citations per year.
 
@@ -117,10 +130,6 @@ CMS-Flux's Impact Score of 14.6 is calculated based on:
 ## Future Trends
 
 Based on citation patterns and emerging research areas, the following trends are projected for CMS-Flux:
-
-![CMS-Flux Future Projections](../../static/img/cms-flux-projections.png)
-
-*Figure 6: Projected citation growth for CMS-Flux (2025-2030). Created using ggplot2 with geom_smooth(method="loess") to generate the prediction interval and confidence bands.*
 
 ### Citation Projection (2025-2030)
 - Projected growth to ~320 citations by 2030 (optimistic scenario: 380 citations)

@@ -1,7 +1,5 @@
 # RAPID (River Application for Parallel computation of Discharge)
 
-![RAPID model banner](../../static/img/rapid-banner.jpg)
-
 ## Overview
 
 RAPID (River Application for Parallel computation of Discharge) is a river routing model designed for parallel computation to simulate flow and discharge in river networks. Developed in 2011, RAPID has been widely applied to watershed modeling, flood prediction, and water resource management.
@@ -20,11 +18,9 @@ RAPID (River Application for Parallel computation of Discharge) is a river routi
 
 ## Citation Trends
 
-The citation trends for RAPID show steady growth since its publication in 2011. The visualization below was created using ggplot2 to show both annual and cumulative citations.
+The citation trends for RAPID show steady growth since its publication in 2011, with particularly strong growth in recent years.
 
-![RAPID Citation Trends](../../static/img/rapid-citations.png)
-
-*Figure 1: Annual and cumulative citations for RAPID (2011-2025). Created using ggplot2 with geom_bar() for annual citations and geom_line() for the cumulative trend.*
+![RAPID Citation Trends](./charts/RAPID_citation_trends.svg)
 
 As of May 2025, RAPID has accumulated 265 citations with an average growth rate of 19.6 citations per year. The peak citation year was 2023 with 31 citations.
 
@@ -32,19 +28,19 @@ As of May 2025, RAPID has accumulated 265 citations with an average growth rate 
 
 RAPID has been applied across various research domains, primarily in river modeling, water resources, and flow analysis.
 
-![RAPID Research Domains](../../static/img/rapid-domains.png)
-
-*Figure 2: Distribution of RAPID citations by research domain. Created using ggplot2 with geom_bar() and coord_polar() to generate a pie chart visualization.*
-
 The primary application of RAPID is in River Modeling, accounting for 43% of all citations. Water Resources (37%) and Flow Analysis (32%) are also significant application domains.
+
+**Research Domain Distribution:**
+- River Modeling: 114 citations (43%)
+- Water Resources: 98 citations (37%)
+- Flow Analysis: 85 citations (32%)
+- Flood Prediction: 67 citations (25%)
+- Streamflow: 45 citations (17%)
+- Other Domains: 24 citations (9%)
 
 ## Engagement Levels
 
-Citations are categorized into four engagement levels based on how deeply RAPID is being utilized:
-
-![RAPID Engagement Levels](../../static/img/rapid-engagement.png)
-
-*Figure 3: Distribution of engagement levels for RAPID citations. Created using ggplot2 with geom_bar() and custom color palette.*
+![RAPID Engagement Levels](./charts/RAPID_engagement_levels.svg)
 
 - **Level 1: Simple Citation** - References the paper without using the model (175 papers, 66.0%)
 - **Level 2: Data Usage** - Uses RAPID methodology or data (50 papers, 18.9%)
@@ -56,10 +52,6 @@ The implementation rate (percentage of Level 2-4 citations) is 34.0%.
 ## Geographic Impact
 
 RAPID has been implemented in 48 watersheds across 17 countries on 5 continents.
-
-![RAPID Geographic Impact](../../static/img/rapid-geographic.png)
-
-*Figure 4: Geographic distribution of RAPID implementations. Created using ggplot2 with geom_map() and custom color gradients to indicate citation density by region.*
 
 ### Top Watersheds
 
@@ -86,9 +78,7 @@ The geographic reach of RAPID has expanded significantly since its publication:
 
 The following visualization compares RAPID with other hydrological models:
 
-![Hydrological Models Comparison](../../static/img/rapid-comparison.png)
-
-*Figure 5: Comparison of citation metrics across hydrological models. Created using ggplot2 with geom_bar() for citation counts and geom_point() with secondary y-axis for impact scores.*
+![Hydrological Models Comparison](./charts/RAPID_model_comparison.svg)
 
 While RAPID has fewer citations than some older models like TOPMODEL (1995) and VIC (1994), it shows strong growth for its age, with an average of 18.5 citations per year compared to the group average of 21.3 citations per year.
 
@@ -117,10 +107,6 @@ RAPID's Impact Score of 15.2 is calculated based on:
 ## Future Trends
 
 Based on citation patterns and emerging research areas, the following trends are projected for RAPID:
-
-![RAPID Future Projections](../../static/img/rapid-projections.png)
-
-*Figure 6: Projected citation growth for RAPID (2025-2030). Created using ggplot2 with geom_smooth() to generate prediction intervals.*
 
 ### Citation Projection (2025-2030)
 - Projected growth to ~480 citations by 2030 (optimistic scenario: 560 citations)

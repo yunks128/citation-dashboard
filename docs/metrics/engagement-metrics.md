@@ -75,13 +75,11 @@ Foundation-level engagement demonstrates the model's transformative impact on th
 Examining the distribution of citations across engagement levels provides insight into how a model is being utilized within the scientific community.
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
-bar
+xychart-beta
     title "RAPID Engagement Level Distribution"
-    "Level 1: Simple Citation" : 175
-    "Level 2: Data Usage" : 50
-    "Level 3: Model Adaptation" : 28
-    "Level 4: Foundation" : 12
+    x-axis "Engagement Level" ["Level 1", "Level 2", "Level 3", "Level 4"]
+    y-axis "Citations" 0 --> 200
+    bar [175, 50, 28, 12]
 ```
 
 ### Typical Distributions
@@ -96,12 +94,9 @@ Most models show a pyramidal distribution, with the highest number of citations 
 
 The Implementation Rate measures the percentage of citations that represent active usage of the model (Engagement Levels 2-4), rather than simple references (Level 1).
 
-```
 $$\text{Implementation Rate} = \frac{\text{Level 2 + Level 3 + Level 4 Citations}}{\text{Total Citations}} \times 100\%$$
-```
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 pie
     title "RAPID Implementation Rate: 34.0%"
     "Active Usage (Levels 2-4)" : 90
@@ -123,14 +118,11 @@ Implementation rates vary by field and model type, but general benchmarks includ
 Comparing implementation rates across models provides insight into relative practical impact:
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
-bar
+xychart-beta
     title "Implementation Rate Comparison"
-    "RAPID" : 34.0
-    "CMS-Flux" : 38.5
-    "ECCO" : 45.2
-    "ISSM" : 41.7
-    "MOMO-CHEM" : 32.8
+    x-axis "Model" ["RAPID", "CMS-Flux", "ECCO", "ISSM", "MOMO-CHEM"]
+    y-axis "Implementation Rate (%)" 0 --> 50
+    bar [34.0, 38.5, 45.2, 41.7, 32.8]
 ```
 
 ## Model Extensions
@@ -157,7 +149,6 @@ Analyzing extensions can reveal:
 - Emerging research directions
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 pie
     title "RAPID Model Extensions by Type"
     "Parameter Adjustments" : 12
@@ -172,17 +163,11 @@ pie
 Tracking engagement levels over time reveals how a model's usage evolves:
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 xychart-beta
     title "RAPID Engagement Levels Over Time"
     x-axis "Year" [2011, 2013, 2015, 2017, 2019, 2021, 2023, 2025]
-    y-axis "Citations"
+    y-axis "Citations" 0 --> 15
     line [2, 3, 4, 5, 7, 9, 11, 12]
-    line [0, 1, 2, 5, 8, 12, 13, 9]
-    line [0, 0, 3, 4, 6, 7, 5, 3]
-    line [0, 0, 0, 3, 3, 2, 2, 2]
-    title "Engagement Levels"
-    legend "Level 4" "Level 3" "Level 2" "Level 1"
 ```
 
 Typical patterns include:
@@ -200,7 +185,6 @@ Beyond academic citations, community engagement metrics provide additional insig
 For open-source models, GitHub metrics indicate community involvement:
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 graph LR
     A[GitHub Engagement] --> B[Stars: 156]
     A --> C[Forks: 54]
@@ -214,14 +198,11 @@ graph LR
 Participation in workshops, tutorials, and training sessions indicates educational engagement:
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
-bar
+xychart-beta
     title "RAPID Workshop Attendance"
-    "2015 AGU Workshop" : 28
-    "2017 CUAHSI Training" : 35
-    "2019 Summer School" : 42
-    "2021 Virtual Workshop" : 64
-    "2023 Advanced Training" : 38
+    x-axis "Event" ["2015 AGU", "2017 CUAHSI", "2019 Summer School", "2021 Virtual", "2023 Advanced"]
+    y-axis "Attendees" 0 --> 70
+    bar [28, 35, 42, 64, 38]
 ```
 
 ### User Community
@@ -238,7 +219,6 @@ The size and activity of the user community indicate practical engagement:
 Analyzing how researchers engage with multiple models provides insight into comparative usage:
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 graph TD
     A[Hydrological Models] --> B[RAPID]
     A --> C[LISFLOOD]

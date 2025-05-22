@@ -89,7 +89,9 @@ Impact Scores can be used to:
 The Implementation Rate measures the percentage of citations that represent active usage of the model (Engagement Levels 2-4), rather than simple references (Level 1).
 
 ```
-$$\text{Implementation Rate} = \frac{\text{Level 2 + Level 3 + Level 4 Citations}}{\text{Total Citations}} \times 100\%$$
+$$
+\text{Implementation Rate} = \frac{\text{Level 2 + Level 3 + Level 4 Citations}}{\text{Total Citations}} \times 100\%
+$$
 ```
 
 A high Implementation Rate indicates that a model is being actively used, adapted, and extended, rather than just mentioned in passing.
@@ -97,7 +99,6 @@ A high Implementation Rate indicates that a model is being actively used, adapte
 ### Example: RAPID Model
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 pie
     title "RAPID Implementation Rate: 34.0%"
     "Active Usage" : 90
@@ -113,21 +114,20 @@ For RAPID:
 
 The Field Influence Factor measures a model's relative impact within its specific research domain. It is calculated by comparing the model's citation rate to the average citation rate for papers in the same field and time period.
 
+```
 $$\text{Field Influence Factor} = \frac{\text{Model's Citations Per Year}}{\text{Field Average Citations Per Year}}$$
+```
 
 A Field Influence Factor greater than 1.0 indicates above-average impact within the field.
 
 ### Example: Model Comparison
 
 ```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': { 'primaryColor': '#1976d2', 'primaryTextColor': '#fff' }}}%%
 xychart-beta
     title "Field Influence Factor Comparison"
-    x-axis "Field Influence Factor" 0 --> 2
-    y-axis [0.5, 1.0, 1.5, 2.0]
+    x-axis "Model" ["ECCO", "RAPID", "ISSM", "MOMO-CHEM", "CMS-Flux"]
+    y-axis "Field Influence Factor" 0 --> 2.0
     bar [1.8, 1.2, 1.5, 0.9, 1.3]
-    title "Models" 
-    legend "ECCO" "RAPID" "ISSM" "MOMO-CHEM" "CMS-Flux"
 ```
 
 ## Cross-Domain Impact
@@ -139,12 +139,13 @@ A high Cross-Domain Impact indicates that a model has broad applicability beyond
 ### Shannon Diversity Index
 
 We use a modified Shannon Diversity Index to quantify cross-domain impact:
-
+```
 $$H' = -\sum_{i=1}^{R} p_i \ln(p_i)$$
+```
 
 Where:
-- $R$ is the number of research domains
-- $p_i$ is the proportion of citations in domain $i$
+- R is the number of research domains
+- p_i is the proportion of citations in domain i
 
 Higher values indicate more even distribution across domains (greater cross-domain impact).
 
@@ -171,7 +172,6 @@ Geographic Reach measures how widely a model is being applied geographically. It
 ### Example: RAPID Geographic Reach
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 pie
     title "RAPID Geographic Distribution by Continent"
     "North America" : 26
@@ -197,14 +197,11 @@ Key comparison metrics include:
 ### Example: Model Comparison
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 xychart-beta
     title "Citations per Year Since Publication"
-    x-axis "Model Age (Years)"
-    y-axis "Citations/Year" 0 --> 35
-    line [18.5, 20.8, 16.2, 19.7, 22.3]
-    title "Models" 
-    legend "RAPID (2011)" "LISFLOOD (2007)" "TOPMODEL (1995)" "HEC-RAS (2002)" "VIC (1994)"
+    x-axis "Model" ["RAPID (2011)", "LISFLOOD (2007)", "TOPMODEL (1995)", "HEC-RAS (2002)", "VIC (1994)"]
+    y-axis "Citations/Year" 0 --> 25
+    bar [18.5, 20.8, 16.2, 19.7, 22.3]
 ```
 
 ## GitHub Metrics
@@ -220,14 +217,11 @@ For open-source models, GitHub metrics provide additional insight into community
 ### Example: RAPID GitHub Metrics
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
-bar
+xychart-beta
     title "RAPID GitHub Metrics"
-    "Stars" : 156
-    "Forks" : 54
-    "Contributors" : 12
-    "Open Issues" : 45
-    "Releases" : 8
+    x-axis "Metric" ["Stars", "Forks", "Contributors", "Open Issues", "Releases"]
+    y-axis "Count" 0 --> 200
+    bar [156, 54, 12, 45, 8]
 ```
 
 ## Limitations and Considerations

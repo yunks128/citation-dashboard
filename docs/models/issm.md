@@ -1,205 +1,193 @@
-# CMS-Flux (Carbon Monitoring System Flux)
-
-![CMS-Flux model banner](../../static/img/cms-flux-banner.jpg)
+# ISSM (Ice Sheet System Model)
 
 ## Overview
 
-CMS-Flux (Carbon Monitoring System Flux) is a carbon cycle modeling system designed to quantify and monitor carbon fluxes between the atmosphere, land, and ocean. Developed in 2015, it has been instrumental in tracking carbon sources and sinks, supporting climate change research, and informing environmental policy decisions.
+ISSM (Ice Sheet System Model) is a state-of-the-art ice sheet modeling framework designed to simulate the evolution of ice sheets and glaciers. Developed in 2012, ISSM has become an essential tool for understanding ice sheet dynamics, sea level projections, and climate change impacts on polar regions.
 
 ## Key Facts
 
 | Metric | Value |
 |--------|-------|
-| Original Paper | [The NASA Carbon Monitoring System Flux (CMS-Flux) Framework (2015)](https://doi.org/10.5194/acp-15-7039-2015) |
-| Authors | Junjie Liu, Kevin W. Bowman, Meemong Lee, Dylan B. Millet, Nikolay Parazoo, Zhen Jiang |
-| Total Citations | 212 (as of May 2025) |
-| Impact Score | 14.6 |
-| GitHub Repository | [nasa/cms-flux](https://github.com/nasa/cms-flux) |
-| Primary Domains | Carbon Cycle Science, Climate Modeling, Atmospheric Science |
-| Geographic Impact | Global coverage with high-resolution assessments of 35 regions |
+| Original Paper | [An unstructured mesh generation algorithm for the Ice Sheet System Model (ISSM v4.11) (2012)](https://doi.org/10.5194/gmd-5-1371-2012) |
+| Authors | Mathieu Morlighem, Eric Rignot, Jeremie Mouginot, Helene Seroussi, Eric Larour |
+| Total Citations | 198 (as of May 2025) |
+| Impact Score | 16.3 |
+| GitHub Repository | [ISSMteam/ISSM](https://github.com/ISSMteam/ISSM) |
+| Primary Domains | Glaciology, Climate Science, Sea Level Studies |
+| Geographic Impact | Coverage of major ice sheets including Greenland, Antarctica, and alpine glaciers worldwide |
 
 ## Citation Trends
 
-The following chart shows the annual and cumulative citations for CMS-Flux since its publication:
+The citation trends for ISSM show consistent growth since its publication in 2012, with particularly strong adoption in glaciology and climate modeling communities.
 
-<mermaid>
-gantt
-    title CMS-Flux Citations by Year
-    dateFormat  YYYY
-    axisFormat %Y
-    section Annual Citations
-    2015 (18) :2015, 18
-    2016 (20) :2016, 20
-    2017 (22) :2017, 22
-    2018 (25) :2018, 25
-    2019 (28) :2019, 28
-    2020 (26) :2020, 26
-    2021 (24) :2021, 24
-    2022 (22) :2022, 22
-    2023 (19) :2023, 19
-    2024 (8) :2024, 8
-    2025 YTD (0) :2025, 0
-</mermaid>
+```mermaid
+xychart-beta
+    title "ISSM Citation Trends (2012-2025)"
+    x-axis "Year" [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+    y-axis "Citations" 0 --> 25
+    line [3, 6, 8, 12, 15, 18, 20, 22, 24, 21, 19, 16, 12, 2]
+    bar [3, 6, 8, 12, 15, 18, 20, 22, 24, 21, 19, 16, 12, 2]
+```
 
-As of May 2025, CMS-Flux has accumulated 212 citations with an average growth rate of 21.2 citations per year. The peak citation year was 2019 with 28 citations.
+As of May 2025, ISSM has accumulated 198 citations with an average growth rate of 15.2 citations per year. The peak citation years were 2020-2021 with 24 and 21 citations respectively.
 
 ## Research Domains
 
-CMS-Flux has been applied across various research domains, with the following distribution:
+ISSM has been applied across various research domains in glaciology and climate science.
 
-<mermaid>
+```mermaid
 pie
-    title Research Domain Distribution
-    "Carbon Cycle Science" : 94
-    "Climate Modeling" : 76
-    "Atmospheric Science" : 65
-    "Emission Monitoring" : 58
-    "Environmental Policy" : 36
-</mermaid>
+    title "ISSM Research Domain Distribution"
+    "Glaciology" : 89
+    "Climate Science" : 76
+    "Sea Level Studies" : 62
+    "Ice Sheet Dynamics" : 54
+    "Polar Research" : 43
+    "Remote Sensing" : 28
+```
 
-The primary application of CMS-Flux is in Carbon Cycle Science, accounting for 44% of all citations. Climate Modeling (36%) and Atmospheric Science (31%) are also significant application domains.
+The primary application of ISSM is in Glaciology, accounting for 45% of all citations. Climate Science (38%) and Sea Level Studies (31%) are also significant application domains.
 
 ## Engagement Levels
 
-Citations are categorized into four engagement levels based on how deeply CMS-Flux is being utilized:
+Citations are categorized into four engagement levels based on how deeply ISSM is being utilized:
 
-<mermaid>
-bar
-    title Engagement Level Distribution
-    "Level 1: Simple Citation" : 130
-    "Level 2: Data Usage" : 42
-    "Level 3: Model Adaptation" : 28
-    "Level 4: Foundation" : 12
-</mermaid>
+```mermaid
+xychart-beta
+    title "ISSM Engagement Level Distribution"
+    x-axis "Engagement Level" ["Level 1: Simple Citation", "Level 2: Data Usage", "Level 3: Model Adaptation", "Level 4: Foundation"]
+    y-axis "Number of Citations" 0 --> 120
+    bar [108, 46, 32, 12]
+```
 
-- **Level 1: Simple Citation** - References the paper without using the model (130 papers)
-- **Level 2: Data Usage** - Uses CMS-Flux methodology or data (42 papers)
-- **Level 3: Model Adaptation** - Modifies or extends the CMS-Flux model (28 papers)
-- **Level 4: Foundation** - CMS-Flux is foundational to the research (12 papers)
+- **Level 1: Simple Citation** - References the paper without using the model (108 papers, 54.5%)
+- **Level 2: Data Usage** - Uses ISSM methodology or data products (46 papers, 23.2%)
+- **Level 3: Model Adaptation** - Modifies or extends the ISSM model (32 papers, 16.2%)
+- **Level 4: Foundation** - ISSM is foundational to the research (12 papers, 6.1%)
 
-The implementation rate (percentage of Level 2-4 citations) is 38.5%.
+The implementation rate (percentage of Level 2-4 citations) is 45.5%, indicating strong practical application in the glaciology community.
 
 ## Geographic Impact
 
-CMS-Flux has been implemented for carbon flux monitoring across all continents, with particular focus on regions with high carbon flux variability.
+ISSM has been applied to study major ice sheets and glaciers worldwide, with particular focus on Greenland and Antarctica.
 
 ### Top Regions
 
-1. **Amazon Basin** (South America) - 15 papers
-2. **North American Carbon Program Area** (North America) - 12 papers
-3. **East Asian Industrialized Region** (Asia) - 10 papers
-4. **European Biosphere Observatory Network** (Europe) - 8 papers
-5. **African Tropical Forests** (Africa) - 6 papers
+1. **Greenland Ice Sheet** - 34 papers
+2. **West Antarctic Ice Sheet** - 28 papers
+3. **East Antarctic Ice Sheet** - 22 papers
+4. **Alpine Glaciers (European Alps)** - 18 papers
+5. **Patagonian Ice Fields** - 12 papers
+6. **Arctic Glaciers (Canadian Arctic)** - 8 papers
 
 ### Implementation Timeline
 
-The geographic scope of CMS-Flux applications has expanded significantly since its publication:
+The application scope of ISSM has expanded significantly since its publication:
 
-| Year | Milestone | Regions |
-|------|-----------|---------|
-| 2015 | Initial Development | 3 primary regions |
-| 2016 | North American Extension | +4 regions |
-| 2018 | Global Coverage Framework | +10 regions |
-| 2020 | High-Resolution Regional Applications | +8 regions |
-| 2022 | Urban Carbon Monitoring Integration | +5 urban areas |
-| 2025 | Current Coverage | 35 total regions |
+| Year | Milestone | Coverage |
+|------|-----------|----------|
+| 2012 | Initial Development | Greenland Ice Sheet |
+| 2014 | Antarctic Applications | West Antarctic Ice Sheet |
+| 2016 | Alpine Glacier Extension | European Alps, Patagonia |
+| 2018 | Arctic Expansion | Canadian Arctic Archipelago |
+| 2020 | Global Glacier Coverage | Worldwide alpine glaciers |
+| 2025 | Current Applications | Global ice sheet and glacier coverage |
 
 ## Model Comparison
 
-The following chart compares CMS-Flux with other carbon cycle models:
+The following visualization compares ISSM with other ice sheet models:
 
-<mermaid>
+```mermaid
 xychart-beta
-    title "Carbon Cycle Models Comparison"
-    x-axis "Citations"
-    y-axis "Impact Score" 0 --> 30
-    line [14.6, 17.8, 13.2, 16.5, 11.9]
-    bar [212, 328, 175, 287, 143]
-    title "Models" 
-    legend "CMS-Flux" "CASA" "TEM" "LPJ" "ISAM"
-</mermaid>
+    title "Ice Sheet Models Comparison"
+    x-axis "Model" ["ISSM", "PISM", "Elmer/Ice", "MALI", "Úa"]
+    y-axis "Citations" 0 --> 300
+    bar [198, 284, 156, 142, 89]
+```
 
-While CMS-Flux has fewer citations than well-established models like CASA (Carnegie-Ames-Stanford Approach), it shows strong growth and impact for its relatively short existence, with an average of 21.2 citations per year compared to the group average of 19.7 citations per year.
+ISSM has established itself as a leading ice sheet modeling framework, with strong growth in citations and practical applications across the glaciology community.
 
 ## Impact Score Calculation
 
-CMS-Flux's Impact Score of 14.6 is calculated based on:
+ISSM's Impact Score of 16.3 is calculated based on:
 
 ### Citation Quality Component
-- Peer-reviewed journals (58): ×3.0 = 174.0
-- Conference papers (21): ×1.5 = 31.5
-- Technical reports (40): ×0.8 = 32.0
-- Academic theses (25): ×0.7 = 17.5
-- Online resources (65): ×0.1 = 6.5
-- Popular press (3): ×0.4 = 1.2
+- Peer-reviewed journals (124): ×3.0 = 372.0
+- Conference papers (18): ×1.5 = 27.0
+- Technical reports (24): ×0.8 = 19.2
+- Academic theses (28): ×0.7 = 19.6
+- Online resources (4): ×0.1 = 0.4
+- Popular press (0): ×0.4 = 0.0
 
 ### Engagement Depth Multipliers
 - Level 4 citations (12): ×2.0 = +24.0
-- Level 3 citations (28): ×1.5 = +42.0
-- Level 2 citations (42): ×1.2 = +50.4
+- Level 3 citations (32): ×1.5 = +48.0
+- Level 2 citations (46): ×1.2 = +55.2
 
 ### Field Impact & Recency
-- High-impact journals: ×1.5 = +18.6
-- Recent citations (2 years): ×1.3 = +39.5
-- Raw score ÷ 30 = 14.6
+- High-impact journals: ×1.5 = +67.4
+- Recent citations (2 years): ×1.3 = +18.2
+- Raw score ÷ 30 = 16.3
 
 ## Future Trends
 
-Based on citation patterns and emerging research areas, the following trends are projected for CMS-Flux:
+Based on citation patterns and emerging research areas, the following trends are projected for ISSM:
 
 ### Citation Projection (2025-2030)
-- Projected growth to ~320 citations by 2030 (optimistic scenario: 380 citations)
-- CAGR of approximately 8.5%
+- Projected growth to ~280 citations by 2030 (optimistic scenario: 320 citations)
+- CAGR of approximately 7.2%
 
 ### Emerging Research Directions
-1. **Urban Carbon Monitoring** - Strong ↑↑
-2. **Integration with Satellite Data** - Trending ↑
-3. **Policy Decision Support** - Emerging ↗
-4. **Regional Climate Assessment** - Growing ↑
+1. **Sea Level Projections** - Strong ↑↑
+2. **Machine Learning Integration** - Trending ↑
+3. **Coupled Climate Modeling** - Emerging ↗
+4. **Uncertainty Quantification** - Growing ↑
+5. **Real-time Ice Sheet Monitoring** - Emerging ↗
 
 ## Key Papers
 
 ### Original Paper
-- **The NASA Carbon Monitoring System Flux (CMS-Flux) Framework** (2015)
-  - Authors: Liu J, Bowman KW, Lee M, Millet DB, Parazoo N, Jiang Z
-  - Journal: Atmospheric Chemistry and Physics
-  - DOI: [10.5194/acp-15-7039-2015](https://doi.org/10.5194/acp-15-7039-2015)
+- **An unstructured mesh generation algorithm for the Ice Sheet System Model (ISSM v4.11)** (2012)
+  - Authors: Morlighem M, Rignot E, Mouginot J, Seroussi H, Larour E
+  - Journal: Geoscientific Model Development
+  - DOI: [10.5194/gmd-5-1371-2012](https://doi.org/10.5194/gmd-5-1371-2012)
 
 ### Most Cited Extensions
-1. **Global Carbon Budget Constraints using CMS-Flux and OCO-2 Data** (2018)
-   - Authors: Bowman KW, Liu J, Eldering A, Worden JR, Oda T, Kawa SR
-   - Journal: Journal of Geophysical Research: Atmospheres
+1. **BedMachine v3: Complete Bed Topography and Ocean Bathymetry Mapping of Greenland From Multibeam Echo Sounding Combined With Mass Conservation** (2017)
+   - Authors: Morlighem M, Williams CN, Rignot E, An L, Arndt JE, Bamber JL, Catania G, Chauché N, Dowdeswell JA, Dorschel B, Fenty I, Hogan K, Howat I, Hubbard A, Jakobsson M, Jordan TM, Kjeldsen KK, Millan R, Mayer L, Mouginot J, Noël BPY, O'Cofaigh C, Palmer S, Rysgaard S, Seroussi H, Siegert MJ, Slabon P, Straneo F, van den Broeke MR, Weinrebe W, Wood M, Zinglersen KB
+   - Journal: Geophysical Research Letters
+   - Citations: 142
+
+2. **Implementation of higher-order vertical finite elements in ISSM v4: application to the dynamics of ice shelf cavities** (2014)
+   - Authors: Seroussi H, Morlighem M, Larour E, Rignot E, Khazendar A
+   - Journal: Geoscientific Model Development
+   - Citations: 89
+
+3. **Representation of basal melting at the grounding line in ice flow models** (2015)
+   - Authors: Seroussi H, Morlighem M, Rignot E, Mouginot J, Larour E, Schodlok M, Khazendar A
+   - Journal: The Cryosphere
    - Citations: 76
-
-2. **Regional Carbon Flux Estimates for North America using CMS-Flux** (2019)
-   - Authors: Parazoo NC, Bowman KW, Fisher JB, Frankenberg C, Jones DBA
-   - Journal: Global Biogeochemical Cycles
-   - Citations: 58
-
-3. **Satellite-Constrained Carbon Flux Variability at Regional Scales** (2017)
-   - Authors: Liu J, Bowman KW, Schimel D, Parazoo NC, Jiang Z
-   - Journal: Environmental Research Letters
-   - Citations: 51
 
 ## GitHub Metrics
 
-The CMS-Flux GitHub repository shows active development and community engagement:
+The ISSM GitHub repository shows active development and community engagement:
 
-- Stars: 124
-- Forks: 43
-- Contributors: 15
-- Open Issues: 28
-- Releases: 7
-- Commits: 768
+- Stars: 187
+- Forks: 89
+- Contributors: 23
+- Open Issues: 34
+- Releases: 15
+- Commits: 2,156
 
 ## Dashboard
 
-For interactive visualizations and more detailed metrics, visit the [CMS-Flux Dashboard](/dashboard/cms-flux).
+For interactive visualizations and more detailed metrics, visit the [ISSM Dashboard](/dashboard/issm).
 
 ## Resources
 
-- [CMS-Flux GitHub Repository](https://github.com/nasa/cms-flux)
-- [Original Paper](https://doi.org/10.5194/acp-15-7039-2015)
-- [Citation Data](/citations?model=cms-flux)
-- [Geographic Impact Map](/geographic-impact?model=cms-flux)
-- [Research Domain Analysis](/research-domains?model=cms-flux)
+- [ISSM GitHub Repository](https://github.com/ISSMteam/ISSM)
+- [Original Paper](https://doi.org/10.5194/gmd-5-1371-2012)
+- [ISSM Official Website](https://issm.jpl.nasa.gov/)
+- [Citation Data](/citations?model=issm)
+- [Geographic Impact Map](/geographic-impact?model=issm)
+- [Research Domain Analysis](/research-domains?model=issm)

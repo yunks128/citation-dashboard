@@ -46,9 +46,7 @@ As of May 2025, RAPID has accumulated 265 total citations since its publication 
 
 The total citations divided by the number of years since publication. This metric helps normalize citation counts for models of different ages.
 
-```
 $$\text{Average Citations per Year} = \frac{\text{Total Citations}}{\text{Years Since Publication}}$$
-```
 
 #### Citation Rate
 
@@ -126,17 +124,11 @@ These metrics examine where and how models are being cited:
 The distribution of citations across different journals and fields. This reveals the breadth of a model's impact across disciplines.
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
-bar
+xychart-beta
     title "RAPID Journal Distribution"
-    "Water Resources Research" : 17
-    "Journal of Hydrology" : 11
-    "JAWRA Journal" : 9
-    "Environmental Modelling & Software" : 8
-    "Hydrology and Earth System Sciences" : 7
-    "Geoscientific Model Development" : 6
-    "Journal of Hydrometeorology" : 3
-    "Journal of the American Water Resources Association" : 2
+    x-axis "Journal" ["Water Resources Research", "Journal of Hydrology", "JAWRA Journal", "Environmental Modelling & Software", "Hydrology and Earth System Sciences"]
+    y-axis "Citations" 0 --> 20
+    bar [17, 11, 9, 8, 7]
 ```
 
 #### Citation Types
